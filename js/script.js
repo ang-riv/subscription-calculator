@@ -9,12 +9,14 @@ subTypeElement.addEventListener("change", function(e){
     subType = e.target.value;
     // testing for the value of the type of subscription
     //console.log(subType);
+    updateSubscriptionDiv();
 });
 
 subDurationElement.addEventListener("change", function (e) {
     subDuration = Number(e.target.value);
     // this number comes from the OPTION VALUE in the html
-    console.log(subDuration);
+    //console.log(subDuration);
+    updateSubscriptionDiv();
 })
 
 var updateSubscriptionDiv = function() {
